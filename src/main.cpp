@@ -1,13 +1,26 @@
-#include <iostream>
-using namespace std;
+//============================================================================
+// Name        : Vellonera.cpp
+// Author      : VMeta
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Vellonera in C++, Ansi-style
+//============================================================================
+#include "Vellonera.h"
 
-//TODO: Implement this code from the scratch
-/*
- * At this point your expected to be able to create your code from the scratch without any guidance.
- *
- */
+using namespace VMeta;
+
+
 
 int main() {
-	cout << "Implement your code" << endl;
+
+	Vellonera* player = new Vellonera();
+	while(true){
+		if(!player->printMenu()){
+			break;
+		}
+	}
+	delete player;
+
+
 	return 0;
 }
